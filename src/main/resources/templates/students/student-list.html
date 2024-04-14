@@ -19,7 +19,7 @@
 
     </form>
     <hr>
-    <div sec:authorize="hasRole('FACULTY')">
+    <div sec:authorize="hasRole('FACULTY') or hasRole('HOD')">
         <a th:href="@{/api/showFormForAdd}" class="btn btn-primary sm mb-3">Add Student</a>
     </div>
 
